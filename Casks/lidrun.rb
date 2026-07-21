@@ -12,7 +12,7 @@ cask "lidrun" do
   # (e.g. https://lidrun.com/download/LidRun-#{version}.dmg serving archived DMGs),
   # switch to a pinned `sha256` and interpolate `#{version}` into `url` — that is
   # also a prerequisite for submitting to the official homebrew/cask repo.
-  version "1.1.42,181"
+  version "1.1.51,192"
   sha256 :no_check
 
   url "https://lidrun.com/download/LidRun.dmg"
