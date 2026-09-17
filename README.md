@@ -12,20 +12,12 @@ Install **[LidRun](https://lidrun.com)** with Homebrew — the macOS menu-bar ap
 ## Install
 
 ```sh
-brew install --cask aibrickai/lidrun/lidrun
+brew trust aibrickai/lidrun && brew install --cask aibrickai/lidrun/lidrun
 ```
 
-This one-line form auto-adds the tap and installs LidRun. Homebrew 6+ refuses a
-third-party tap until you trust it once, so if you hit
-`Refusing to load cask ... from untrusted tap`, run it as:
-
-```sh
-brew trust aibrickai/lidrun
-brew install --cask aibrickai/lidrun/lidrun
-```
-
-Prefer to tap first? `brew tap aibrickai/lidrun` then `brew install --cask lidrun`
-works the same.
+`brew trust` auto-adds the tap and clears Homebrew 6+'s one-time check for
+third-party taps, so this single line both taps and installs LidRun with no
+`Refusing to load cask ... from untrusted tap` error.
 
 The DMG is **Developer-ID signed and Apple-notarized**, so it installs with no
 Gatekeeper workaround — and LidRun keeps itself up to date via Sparkle. Prefer a
